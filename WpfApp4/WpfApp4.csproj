@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="20210221_180255.jpg" />
+    <None Remove="arrow.png" />
+    <None Remove="call icon.jpg" />
+    <None Remove="call.jpg" />
+    <None Remove="dot.jpg" />
+    <None Remove="icons8-видеозвонок-24.png" />
+    <None Remove="icons8-отправлено-48.png" />
+    <None Remove="icons8-счастливый-24 %281%29.png" />
+    <None Remove="icons8-счастливый-24.jpeg" />
+    <None Remove="icons8-счастливый-24.png" />
+    <None Remove="icons8-счастливый-48.png" />
+    <None Remove="tw0nawnvo0zpgm5nx4fp.png" />
+    <None Remove="video-calling-icon-4.jpg" />
+    <None Remove="videocall.jpg" />
+    <None Remove="Снимок экрана %2810%29.png" />
+    <None Remove="Снимок экрана %2811%29.png" />
+    <None Remove="Снимок экрана %288%29.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.16.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="20210221_180255.jpg" />
+    <Resource Include="arrow.png" />
+    <Resource Include="call icon.jpg" />
+    <Resource Include="call.jpg" />
+    <Resource Include="dot.jpg" />
+    <Resource Include="icons8-видеозвонок-24.png" />
+    <Resource Include="icons8-отправлено-48.png" />
+    <Resource Include="icons8-счастливый-24 (1).png" />
+    <Resource Include="icons8-счастливый-24.jpeg" />
+    <Resource Include="icons8-счастливый-24.png" />
+    <Resource Include="icons8-счастливый-48.png" />
+    <Resource Include="tw0nawnvo0zpgm5nx4fp.png" />
+    <Resource Include="video-calling-icon-4.jpg" />
+    <Resource Include="videocall.jpg" />
+    <Resource Include="Снимок экрана (10).png" />
+    <Resource Include="Снимок экрана (11).png" />
+    <Resource Include="Снимок экрана (8).png" />
+  </ItemGroup>
+
+</Project>

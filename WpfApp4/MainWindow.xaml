@@ -1,0 +1,111 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="470" Width="720" ResizeMode="NoResize">
+    <Grid>
+        <Grid x:Name="grid">
+            <Grid.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="/tw0nawnvo0zpgm5nx4fp.png"/>
+            </Grid.Background>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition Height="310"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <ListView Grid.Row="0" Background="#FF075E55" >
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="435"></ColumnDefinition>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Height="50" Grid.Column="5" Click="Button_Click_1">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/dot.jpg"/>
+                        </Button.Background>
+                    </Button>
+
+                    <Button Height="50" Grid.Column="4">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/call icon.jpg"/>
+                        </Button.Background>
+                    </Button>
+
+                    <Button Height="50" Grid.Column="3">
+                        <Button.Background>
+                            <ImageBrush Stretch="UniformToFill" ImageSource="/videocall.jpg"/>
+                        </Button.Background>
+                    </Button>
+
+                    <Label Height="50" Grid.Column="2" FontSize="16" Foreground="White">Name</Label>
+                    
+                    <Button Height="50" Grid.Column="1">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/20210221_180255.jpg"/>
+                        </Button.Background>
+                    </Button>
+                    
+                    <Button Height="50" Grid.Column="0">
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="/arrow.png"/>
+                        </Button.Background>
+                    </Button>
+
+                </Grid>
+
+            </ListView >
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="/icons8-счастливый-48.png"/>
+                    </Button.Background> </Button>
+                
+                <TextBox Name="tbox" Grid.Column="1"></TextBox>
+                
+                <Button Grid.Column="2">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Снимок экрана (11).png" Stretch="UniformToFill"/>
+                    </Button.Background>
+                </Button>
+                
+                <Button Grid.Column="3">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Снимок экрана (10).png" Stretch="UniformToFill"/>
+                    </Button.Background>
+                </Button>
+                
+                <Button Grid.Column="4" Click="Button_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/icons8-отправлено-48.png" Stretch="Fill"/>
+                    </Button.Background>
+                </Button>
+                
+            </Grid>
+
+            <ListView Name="listv" Grid.Row="1" Background="Transparent" FontSize="14">
+                
+            </ListView>
+        </Grid>
+
+    </Grid>
+</Window>
